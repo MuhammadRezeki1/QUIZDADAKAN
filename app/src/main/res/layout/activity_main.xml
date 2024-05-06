@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#FAEBD7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wrng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warung Eki Resing"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Makanan"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/nasigoreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/nasi_goreng"
+
+          />
+
+        <RadioButton
+            android:id="@+id/miegoreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mie_goreng"
+            android:textSize="15sp"
+             />
+
+        <RadioButton
+            android:id="@+id/mierebus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/mie_rebus"
+           />
+        <RadioButton
+            android:id="@+id/nasiuduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/nasi_uduk"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/menuminuman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Minuman"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/tehes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/teh_es"
+
+            />
+
+        <RadioButton
+            android:id="@+id/esjeruk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/es_jeruk"
+            android:textSize="15sp"
+            />
+
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/jml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Jumlah Porsi"
+
+
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/jumlah_porsi"
+
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jmlporsi"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/pesanbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+
+        />
+
+
+
+
+
+
+</LinearLayout>
